@@ -1,0 +1,8 @@
+header {
+  padding-bottom: 20px;
+  border-bottom: $line-width solid $line-color;
+  overflow: hidden;
+}
+
+@import "text";
+@import "contact";

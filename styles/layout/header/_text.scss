@@ -1,0 +1,14 @@
+header .text {
+  float: left;
+}
+
+header h1 {
+  font-size: 64px;
+  color: $font-color-primary;
+}
+
+header h2 {
+  font-size: 20px;
+  color: $font-color-secondary;
+  margin-top: 15px;
+}

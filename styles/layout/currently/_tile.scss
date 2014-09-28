@@ -1,0 +1,39 @@
+section.currently .tile {
+  width: 293.3px;
+  margin-right: 10px;
+  float: left;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  background-color: $secondary-background;
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.currently .tile h4 {
+  font-size: 22px;
+  color: $font-color-primary;
+}
+
+.currently .tile .img-container {
+  height: 180px;
+  margin-top: 20px;
+}
+
+.currently .tile img {
+  width: 200px;
+
+  &.interested {
+    margin-top: 2px;
+  }
+
+  &.reading {
+    margin-top: 4px;
+  }
+
+  &.building {
+    margin-top: 12px;
+  }
+}

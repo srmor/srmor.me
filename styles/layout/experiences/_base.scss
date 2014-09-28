@@ -1,0 +1,13 @@
+section.experiences {
+  margin: 50px 0 0 0;
+}
+
+section.experiences h3 {
+  font-size: 32px;
+  color: $font-color-primary;
+  border-bottom: $line-color solid $line-width;
+  padding-bottom: 6px;
+  margin-bottom: 40px;
+}
+
+@import "experience";

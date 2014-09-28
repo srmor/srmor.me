@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #F9F9F9;
+  font-family: "Muli", sans-serif; }
+
+.container {
+  width: 900px;
+  margin: 30px auto; }
+
+header {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #979797;
+  overflow: hidden; }
+
+header .text {
+  float: left; }
+
+header h1 {
+  font-size: 64px;
+  color: #6C7078; }
+
+header h2 {
+  font-size: 20px;
+  color: #ADADAD;
+  margin-top: 15px; }
+
+header .contact {
+  float: right; }
+
+header img {
+  height: 109px;
+  width: 109px;
+  display: inline-block;
+  position: relative;
+  right: -38px; }
+
+header .social {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px; }
+
+header .twitter {
+  color: white;
+  width: 60px;
+  text-align: right;
+  padding: 6px 7px 6px 0;
+  display: block;
+  background: #41AAF1;
+  margin-bottom: 7px; }
+
+header .linkedin {
+  color: white;
+  width: 60px;
+  text-align: right;
+  padding: 6px 7px 6px 0;
+  display: block;
+  background: #0086C0;
+  margin-bottom: 7px; }
+
+header .github {
+  color: white;
+  width: 60px;
+  text-align: right;
+  padding: 6px 7px 6px 0;
+  display: block;
+  background: #202021; }
+
+section.currently {
+  margin: 20px 0 0 0;
+  overflow: hidden; }
+
+section.currently .tile {
+  width: 293.3px;
+  margin-right: 10px;
+  float: left;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  background-color: #E9E9E9;
+  text-align: center; }
+  section.currently .tile:last-child {
+    margin-right: 0; }
+
+.currently .tile h4 {
+  font-size: 22px;
+  color: #6C7078; }
+
+.currently .tile .img-container {
+  height: 180px;
+  margin-top: 20px; }
+
+.currently .tile img {
+  width: 200px; }
+  .currently .tile img.interested {
+    margin-top: 2px; }
+  .currently .tile img.reading {
+    margin-top: 4px; }
+  .currently .tile img.building {
+    margin-top: 12px; }
+
+section.experiences {
+  margin: 50px 0 0 0; }
+
+section.experiences h3 {
+  font-size: 32px;
+  color: #6C7078;
+  border-bottom: #979797 solid 2px;
+  padding-bottom: 6px;
+  margin-bottom: 40px; }
+
+section.experiences .experience {
+  margin: 0 0 55px 0;
+  overflow: hidden; }
+  section.experiences .experience:last-child {
+    margin-bottom: 0; }
+
+.experience .company-container {
+  float: left;
+  position: absolute; }
+
+.experience h4 {
+  width: 135px;
+  padding: 12px 0 12px 0;
+  text-align: center;
+  font-size: 26px;
+  color: #FFFFFF; }
+  .experience h4.faithlife {
+    background-color: #27C645; }
+  .experience h4.sunrise {
+    background: linear-gradient(to bottom, #FF6000, #FF383C); }
+  .experience h4.quizlet {
+    background: linear-gradient(to bottom, #2072de, #1d67c7); }
+
+.experience .details {
+  float: left;
+  margin-left: 170px; }
+
+.experience .header {
+  margin-bottom: 20px; }
+  .experience .header h5 {
+    font-size: 26px;
+    color: #6C7078;
+    margin-bottom: 4px; }
+  .experience .header h6 {
+    font-size: 18px;
+    color: #ADADAD; }
+
+.experience .accomplishments {
+  line-height: 130%;
+  font-size: 20px;
+  color: #6C7078;
+  margin-bottom: 20px; }
+  .experience .accomplishments ul {
+    list-style: disc inside none; }
+
+.experience .tech-used span {
+  display: block;
+  float: left;
+  color: #6C7078;
+  font-size: 16px;
+  padding: 8px;
+  margin-right: 10px;
+  background-color: #E9E9E9;
+  border-radius: 3px; }
+  .experience .tech-used span:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=main.css.map */

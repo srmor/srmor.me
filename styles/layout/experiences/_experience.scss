@@ -1,0 +1,79 @@
+section.experiences .experience {
+  margin: 0 0 55px 0;
+  overflow: hidden;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.experience .company-container {
+  float: left;
+  position: absolute;
+}
+
+.experience h4 {
+  width: 135px;
+  padding: 12px 0 12px 0;
+  text-align: center;
+  font-size: 26px;
+  color: #FFFFFF;
+
+  &.faithlife {
+    background-color: #27C645;
+  }
+
+  &.sunrise {
+    background: linear-gradient(to bottom, #FF6000, #FF383C);
+  }
+
+  &.quizlet {
+    background: linear-gradient(to bottom, #2072de, #1d67c7);
+  }
+}
+
+.experience .details {
+  float: left;
+  margin-left: 170px;
+}
+
+.experience .header {
+  margin-bottom: 20px;
+
+  h5 {
+    font-size: 26px;
+    color: $font-color-primary;
+    margin-bottom: 4px;
+  }
+
+  h6 {
+    font-size: 18px;
+    color: $font-color-secondary;
+  }
+}
+
+.experience .accomplishments {
+  line-height: 130%;
+  font-size: 20px;
+  color: $font-color-primary;
+  margin-bottom: 20px;
+
+  ul {
+    list-style: disc inside none;
+  }
+}
+
+.experience .tech-used span {
+  display: block;
+  float: left;
+  color: $font-color-primary;
+  font-size: 16px;
+  padding: 8px;
+  margin-right: 10px;
+  background-color: $secondary-background;
+  border-radius: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,42 @@
+header .contact {
+  float: right;
+}
+
+header img {
+  height: 109px;
+  width: 109px;
+  display: inline-block;
+  position: relative;
+  right: -38px;
+}
+
+header .social {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+}
+
+@mixin social {
+  color: white;
+  width: 60px;
+  text-align: right;
+  padding: 6px 7px 6px 0;
+  display: block;
+}
+
+header .twitter {
+  @include social;
+  background: #41AAF1;
+  margin-bottom: 7px;
+}
+
+header .linkedin {
+  @include social;
+  background: #0086C0;
+  margin-bottom: 7px;
+}
+
+header .github {
+  @include social;
+  background: #202021;
+}
