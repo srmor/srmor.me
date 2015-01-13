@@ -19,6 +19,10 @@ section.experiences .experience {
   font-size: 26px;
   color: #FFFFFF;
 
+  &.prevalent {
+    background-color: #2A5288;
+  }
+
   &.faithlife {
     background-color: #27C645;
   }

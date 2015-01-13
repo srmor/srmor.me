@@ -122,11 +122,12 @@ section.currently .tile {
 .currently .tile img {
   width: 200px; }
   .currently .tile img.interested {
-    margin-top: 2px; }
+    margin-top: 20px; }
   .currently .tile img.reading {
     margin-top: 4px; }
   .currently .tile img.building {
-    margin-top: 12px; }
+    width: 95px;
+    margin-top: 20px; }
 
 section.experiences {
   margin: 50px 0 0 0; }
@@ -156,6 +157,9 @@ section.experiences .experience {
   color: #FFFFFF; }
   .experience h4.faithlife {
     background-color: #27C645; }
+  .experience h4.prevalent {
+    background-color: #2A5288;
+  }
   .experience h4.sunrise {
     background: linear-gradient(to bottom, #FF6000, #FF383C); }
   .experience h4.quizlet {
