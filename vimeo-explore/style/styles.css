@@ -153,8 +153,8 @@ a:hover {
 }
 
 .video-panel .video-details h1 {
-    display: inline-block;
-    margin: 0;
+  display: inline-block;
+  margin: 0;
 }
 
 .video-details .stats {
@@ -166,9 +166,9 @@ a:hover {
 }
 
 .video-details {
-    margin: 25px auto;
-    width: 640px;
-    color: #abc;
+  margin: 25px auto;
+  width: 640px;
+  color: #abc;
 }
 
 .video-details .user {
@@ -212,64 +212,72 @@ a:hover {
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .video-details .stats .row {
-    padding: 10px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #7590ac;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #7590ac;
 }
 
 .video-details .stats .row span:last-child {
-    display: inline-block;
-    float: right;
+  display: inline-block;
+  float: right;
 }
 
 .video-details .description p {
-    margin-bottom: 15px;
-    min-height: 152px;
-    word-break: break-all;
+  margin-bottom: 15px;
+  min-height: 152px;
+  word-break: break-all;
 }
 
 .video-details .tags {
-    padding: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 .video-details .tags .tag {
-    background: #40c1fd;
-    padding: 5px;
+  background: #6b88a5;
+  padding: 5px;
 }
 
 .video-details .tags h3 {
-    margin: 0;
-    font-size: 16px;
-    margin: 0 4px 10px;
+  margin: 0;
+  font-size: 16px;
+  margin: 0 4px 10px;
 }
 
 #sort-filter span {
-    padding: 5px 0;
-    display: block;
+  padding: 5px 0;
+  display: block;
 }
 
 .play-video .play {
-    /* display: none; */
-    position: absolute; height: 100px; top: 50%; left: 50%; margin-top: -50px; margin-left: -50px;
+  position: absolute;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
 }
 
 .video-panel .play-video {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
 #video-grid .video .thumbnail:hover {
-    opacity: .8;
+  opacity: .8;
 }
 
 #filter-container h3 {
-    margin: 5px 5px 8px; font-size: 17px; font-weight: normal; border-bottom: 1px solid black; padding-bottom: 3px;
+  margin: 5px 5px 8px;
+  font-size: 17px;
+  font-weight: normal;
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
 }
 
 #sort-filter select {
-    margin: 5px;
+  margin: 5px;
 }
