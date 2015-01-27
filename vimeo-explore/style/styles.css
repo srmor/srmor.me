@@ -140,6 +140,11 @@ a:hover {
   margin: 0 auto;
 }
 
+.video-panel .video iframe {
+  margin: 0 auto;
+  display: block;
+}
+
 .video-panel .video {
   margin-top: 20px;
   overflow-y: auto;
@@ -244,17 +249,6 @@ p {
 #sort-filter span {
     padding: 5px 0;
     display: block;
-}
-
-img.large-thumbnail:after {
-    content: url(../img/glyphicons-221-play-button.png);
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    left: 0;
-    background: red;
 }
 
 .play-video .play {
