@@ -22,7 +22,7 @@ var VideoDetails = React.createClass({displayName: "VideoDetails",
     var tagList = '';
 
     if (video.tags.length > 0)
-      tagList = React.createElement(TagList, {tags:  video.tags})
+      tagList = React.createElement(TagList, {tags:  video.tags, handleTagClick:  this.props.handleTagClick})
 
     return (React.createElement("div", {className: "video-details"}, 
         React.createElement("h1", null, React.createElement("a", {href:  video.url, target: "_blank"},  video.title)), 

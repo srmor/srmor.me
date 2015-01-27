@@ -16,7 +16,7 @@ var Grid = React.createClass({
     return sortedAsc.reverse();
   },
   sortByPopularity: function(items) {
-    return _.sortBy(items, 'stats_number_of_plays');
+    return _.sortBy(items, 'stats_number_of_plays').reverse();
   },
   getTaggedVideos: function(videos, tags) {
     var filteredVideos = [];
@@ -50,8 +50,8 @@ var Grid = React.createClass({
     }
 
     var videoNodes = sortedVideos.map(function(video, index) {
-      return <VideoTile video={video} key={index}/>
-    });
+      return <VideoTile video={video} key={index} handleDetailTagClick={ this.props.handleDetailTagClick } />
+    }.bind(this));
 
     return <div id="video-grid" className="container">{videoNodes}</div>;
   }

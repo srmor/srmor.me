@@ -22,7 +22,7 @@ var VideoDetails = React.createClass({
     var tagList = '';
 
     if (video.tags.length > 0)
-      tagList = <TagList tags={ video.tags } />
+      tagList = <TagList tags={ video.tags } handleTagClick={ this.props.handleTagClick }/>
 
     return (<div className="video-details">
         <h1><a href={ video.url } target="_blank">{ video.title }</a></h1>

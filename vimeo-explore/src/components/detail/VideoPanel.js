@@ -22,7 +22,7 @@ var VideoPanel = React.createClass({
         </div>
         <div className="video">
           { largeVideo }
-          <VideoDetails video={ this.props.video } />
+          <VideoDetails video={ this.props.video } handleTagClick={ this.props.handleTagClick }/>
         </div>
       </div>);
   }

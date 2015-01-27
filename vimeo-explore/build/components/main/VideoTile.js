@@ -1,6 +1,6 @@
 var VideoTile = React.createClass({displayName: "VideoTile",
   handleClick: function() {
-    var x = React.render(React.createElement(Detail, {video:  this.props.video}), document.getElementById('overlay'));
+    var x = React.render(React.createElement(Detail, {video:  this.props.video, handleTagClick:  this.props.handleDetailTagClick}), document.getElementById('overlay'));
     $('body').css('overflow', 'hidden');
     $('.video-panel').animate({right: 0}, 100);
   },
