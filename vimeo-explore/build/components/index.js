@@ -1,0 +1,1 @@
+React.render(React.createElement(Main, {source: "http://vimeo.com/api/v2/channel/staffpicks/videos.json"}), document.getElementById('container'));
