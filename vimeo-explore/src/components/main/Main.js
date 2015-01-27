@@ -31,6 +31,11 @@ var Main = React.createClass({
       tagFilter: []
     };
   },
+  clearTagFilters: function () {
+    this.setState({
+      tagFilter: []
+    });
+  },
   handleSortFilterUpdate: function (newFilter) {
     this.setState({
       sortFilter: newFilter
@@ -59,7 +64,7 @@ var Main = React.createClass({
   render: function () {
     return (<div>
       <Grid videos={ this.state.videos } sortFilter={this.state.sortFilter} tagFilter={this.state.tagFilter}/>
-    <FilterContainer sortFilter={this.state.sortFilter} tagFilter={this.state.tagFilter}  onSortFilterUpdate={ this.handleSortFilterUpdate } onTagFilterUpdate={ this.handleTagFilterUpdate } videos={ this.state.videos } />
+    <FilterContainer sortFilter={this.state.sortFilter} tagFilter={this.state.tagFilter}  onSortFilterUpdate={ this.handleSortFilterUpdate } onTagFilterUpdate={ this.handleTagFilterUpdate } videos={ this.state.videos } clearTagFilters={ this.clearTagFilters }/>
     <div id="overlay"></div>
     </div>);
   }

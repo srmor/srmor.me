@@ -99,7 +99,7 @@ a:hover {
 }
 
 .tag.selected img {
-  height: 9px;
+  height: 10px;
 }
 
 #details {
@@ -271,13 +271,30 @@ p {
 }
 
 #filter-container h3 {
-  margin: 5px 5px 8px;
-  font-size: 17px;
-  font-weight: normal;
-  border-bottom: 1px solid black;
-  padding-bottom: 3px;
+    font-weight: normal;
+    margin: 0;
+    font-size: 16px;
+    float: left;
 }
 
 #sort-filter select {
   margin: 5px;
+}
+
+#filter-container .header {
+    margin: 5px 5px 8px;  font-weight: normal; border-bottom: 1px solid black; padding-bottom: 3px;
+    overflow: hidden;
+}
+
+#filter-container .header span {
+    display: block;
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #A43941;
+}
+
+#filter-container .header span:hover {
+    cursor: pointer;
+    color: #7e2c32;
 }

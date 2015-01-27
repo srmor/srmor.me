@@ -31,6 +31,11 @@ var Main = React.createClass({displayName: "Main",
       tagFilter: []
     };
   },
+  clearTagFilters: function () {
+    this.setState({
+      tagFilter: []
+    });
+  },
   handleSortFilterUpdate: function (newFilter) {
     this.setState({
       sortFilter: newFilter
@@ -59,7 +64,7 @@ var Main = React.createClass({displayName: "Main",
   render: function () {
     return (React.createElement("div", null, 
       React.createElement(Grid, {videos:  this.state.videos, sortFilter: this.state.sortFilter, tagFilter: this.state.tagFilter}), 
-    React.createElement(FilterContainer, {sortFilter: this.state.sortFilter, tagFilter: this.state.tagFilter, onSortFilterUpdate:  this.handleSortFilterUpdate, onTagFilterUpdate:  this.handleTagFilterUpdate, videos:  this.state.videos}), 
+    React.createElement(FilterContainer, {sortFilter: this.state.sortFilter, tagFilter: this.state.tagFilter, onSortFilterUpdate:  this.handleSortFilterUpdate, onTagFilterUpdate:  this.handleTagFilterUpdate, videos:  this.state.videos, clearTagFilters:  this.clearTagFilters}), 
     React.createElement("div", {id: "overlay"})
     ));
   }

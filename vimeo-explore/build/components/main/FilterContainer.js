@@ -18,7 +18,7 @@ var FilterContainer = React.createClass({displayName: "FilterContainer",
     return (React.createElement("div", {id: "filter-container"}, 
       React.createElement("div", {className: "container"}, 
         React.createElement(SortFilter, {selectedSort:  this.props.sortFilter, onUserInput:  this.props.onSortFilterUpdate}), 
-        React.createElement(TagFilter, {tags: tags, selectedTags:  this.props.tagFilter, onUserInput:  this.props.onTagFilterUpdate})
+        React.createElement(TagFilter, {tags: tags, selectedTags:  this.props.tagFilter, onUserInput:  this.props.onTagFilterUpdate, clearFilters:  this.props.clearTagFilters})
       )
     ));
   }

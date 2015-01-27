@@ -18,7 +18,7 @@ var FilterContainer = React.createClass({
     return (<div id="filter-container">
       <div className="container">
         <SortFilter selectedSort={ this.props.sortFilter } onUserInput={ this.props.onSortFilterUpdate }/>
-        <TagFilter tags={ tags } selectedTags={ this.props.tagFilter } onUserInput={ this.props.onTagFilterUpdate }/>
+        <TagFilter tags={ tags } selectedTags={ this.props.tagFilter } onUserInput={ this.props.onTagFilterUpdate } clearFilters={ this.props.clearTagFilters }/>
       </div>
     </div>);
   }
