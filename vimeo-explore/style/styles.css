@@ -1,0 +1,280 @@
+body {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #7590ac;
+}
+
+a:hover {
+  color: #7f99b2;
+}
+
+#video-grid {
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+
+#video-grid .video .thumbnail {
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#filter-container {
+  height: 125px;
+  overflow: auto;
+  background: rgba(255,255,255,.8);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#filter-container .container {
+  padding: 10px;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  color: white;
+  border-radius: 3px;
+  margin: 4px;
+}
+
+.tag:not(.selected) {
+  background-color: #40c1fd;
+}
+
+.tag.selected {
+  background-color: #A43941;
+}
+
+#sort-filter {
+  float: left;
+  width: 12%;
+}
+
+#tag-cloud {
+  float: left;
+  width: 88%;
+}
+
+.tag .count {
+  display: inline-block;
+  padding: 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.tag:not(.selected) .count {
+  background: #015880;
+  padding-left: 6px;
+}
+
+.tag.selected .count {
+  background-color: #72272d;
+}
+
+.tag .name {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 5px 8px;
+}
+
+.tag:not(.selected) .name {
+  background: #40c1fd;
+}
+
+#tag-cloud .tag:hover {
+  cursor: pointer;
+}
+
+.tag.selected img {
+  height: 9px;
+}
+
+#details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.video-panel {
+  position: absolute;
+  right: -740px;
+  bottom: 0;
+  top: 0;
+  background: #345;
+  width: 700px;
+}
+
+.video-panel .close {
+  position: absolute;
+  left: -36px;
+  padding: 12px 10px 10px 14px;
+  background: #607f9f;
+  top: 20px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  cursor: pointer;
+}
+
+.video-panel .close img {
+  height: 12px;
+}
+
+.video-panel .video .large-thumbnail {
+  max-height: 360px;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-panel .video {
+  margin-top: 20px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.video-panel .video-details h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+.video-details .stats {
+  float: right;
+  width: 290px;
+  margin-bottom: 20px;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+}
+
+.video-details {
+    margin: 25px auto;
+    width: 640px;
+    color: #abc;
+}
+
+.video-details .user {
+  color: #abc;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  border-bottom: 1px solid black;
+  padding-top: 0 !important;
+}
+
+.video-details .user:hover {
+  color: #7f99b2;
+}
+
+.video-details .user span {
+  line-height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  padding: 0 10px 0 5px;
+}
+
+.video-details .user img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.video-details .description {
+  /* width: 320px; */
+  margin: 20px 0;
+}
+
+.video-panel a.show-more {
+  display: block;
+  text-align: center;
+  border-top: 1px solid #7590ac;
+  padding: 6px 0;
+  color: #7590ac;
+  cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+.video-details .stats .row {
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #7590ac;
+}
+
+.video-details .stats .row span:last-child {
+    display: inline-block;
+    float: right;
+}
+
+.video-details .description p {
+    margin-bottom: 15px;
+    min-height: 152px;
+    word-break: break-all;
+}
+
+.video-details .tags {
+    padding: 20px 0 20px 0;
+}
+
+.video-details .tags .tag {
+    background: #40c1fd;
+    padding: 5px;
+}
+
+.video-details .tags h3 {
+    margin: 0;
+    font-size: 16px;
+    margin: 0 4px 10px;
+}
+
+#sort-filter span {
+    padding: 5px 0;
+    display: block;
+}
+
+img.large-thumbnail:after {
+    content: url(../img/glyphicons-221-play-button.png);
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: red;
+}
+
+.play-video .play {
+    /* display: none; */
+    position: absolute; height: 100px; top: 50%; left: 50%; margin-top: -50px; margin-left: -50px;
+}
+
+.video-panel .play-video {
+    position: relative;
+    display: block;
+}
+
+#video-grid .video .thumbnail:hover {
+    opacity: .8;
+}
+
+#filter-container h3 {
+    margin: 5px 5px 8px; font-size: 17px; font-weight: normal; border-bottom: 1px solid black; padding-bottom: 3px;
+}
+
+#sort-filter select {
+    margin: 5px;
+}
