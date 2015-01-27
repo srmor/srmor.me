@@ -14,7 +14,7 @@ var SortFilter = React.createClass({
   render: function () {
     var newSelectedSort = this.createOptionValueFromFilter(this.props.selectedSort)
     return (<div id="sort-filter">
-        <span>Sort By:</span>
+        <h3>Sort By:</h3>
         <select value={ newSelectedSort } onChange={ this.handleSortChange } ref="sortFilterInput">
           <option value="date-desc">Date Desc</option>
           <option value="date-asc">Date Asc</option>

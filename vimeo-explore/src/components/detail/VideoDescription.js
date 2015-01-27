@@ -4,7 +4,7 @@ var VideoDescription = React.createClass({
     description = description.replace(/<br \/>/g, '<br/>');
 
     var descriptionWords = description.split(' ');
-    var summaryWords = descriptionWords.slice(0, 60);
+    var summaryWords = descriptionWords.slice(0, 75);
 
     if (showSummary)
       return summaryWords.join(' ').replace(/<br\/>/g, '<br />');
