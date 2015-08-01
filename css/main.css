@@ -139,6 +139,11 @@ section.experiences h3 {
   padding-bottom: 6px;
   margin-bottom: 40px; }
 
+li.indent {
+  margin-left: 15px;
+  list-style-type: circle;
+}
+
 section.experiences .experience {
   margin: 0 0 55px 0;
   overflow: hidden; }
@@ -159,6 +164,9 @@ section.experiences .experience {
     background-color: #27C645; }
   .experience h4.prevalent {
     background-color: #2A5288;
+  }
+  .experience h4.vimeo {
+    background-color: #4bf;
   }
   .experience h4.sunrise {
     background: linear-gradient(to bottom, #FF6000, #FF383C); }
